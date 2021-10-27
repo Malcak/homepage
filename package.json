@@ -1,0 +1,42 @@
+{
+  "name": "malcak-homepage",
+  "version": "1.0",
+  "description": "Malcak's homepage and portfolio website",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "lint": "next lint",
+    "start": "next start"
+  },
+  "keywords": [
+    "malcak",
+    "homepage",
+    "portfolio",
+    "react",
+    "chakra ui",
+    "threejs",
+    "framer motion"
+  ],
+  "author": "Malcak<Malcakx@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@chakra-ui/icons": "^1.0.15",
+    "@chakra-ui/react": "^1.6.9",
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "@fontsource/m-plus-rounded-1c": "^4.5.0",
+    "framer-motion": "^4.1.17",
+    "next": "^11.1.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "sharp": "^0.29.2",
+    "three": "^0.133.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-next": "^11.1.2",
+    "prettier": "^2.4.1"
+  }
+}
