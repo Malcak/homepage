@@ -9,10 +9,16 @@ import {
   Link,
   List,
   ListItem,
+  useClipboard,
   useColorModeValue
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
-import { IoLogoGithub, IoLogoTwitter, IoLogoSteam } from 'react-icons/io5'
+import {
+  IoLogoGithub,
+  IoLogoTwitter,
+  IoLogoSteam,
+  IoMail
+} from 'react-icons/io5'
 
 import Layout from '../components/layouts/article'
 import Paragraph from '../components/paragraph'
@@ -20,6 +26,8 @@ import Section from '../components/section'
 import { BioSection, BioYear } from '../components/bio'
 
 const Page = () => {
+  const { hasCopied, onCopy } = useClipboard('Malcakx@gmail.com')
+
   return (
     <Layout>
       <Container>
@@ -127,7 +135,18 @@ const Page = () => {
             Links
           </Heading>
           <List>
-            {/* TODO: add email */}
+            <ListItem>
+              <Link>
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoMail} />}
+                  onClick={onCopy}
+                >
+                  {hasCopied ? 'Copied' : 'Malcakx@gmail.com'}
+                </Button>
+              </Link>
+            </ListItem>
 
             <ListItem>
               <Link href="https://github.com/malcak" target="_blank">
