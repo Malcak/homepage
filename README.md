@@ -1,6 +1,6 @@
 # Malcak's Homepage
 
-[Live on Github Pages](https://malcak.github.io/).
+[Live on Vercel](https://malcak.vercel.app/).
 
 ## Stack
 
