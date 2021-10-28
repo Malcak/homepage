@@ -47,7 +47,7 @@ const Page = () => {
             <Heading as="h2" variant="page-title">
               Malcak
             </Heading>
-            <p>Full-stack and Game developer ( at least trying )</p>
+            <p>Full-stack and Game developer (at least trying)</p>
           </Box>
           <Box
             flexShrink={0}
@@ -99,9 +99,14 @@ const Page = () => {
             Born in Antioquia, Colombia.
           </BioSection>
           <BioSection>
+            <BioYear>2016</BioYear>
+            He completed his high school studies at Liceo Francisco Restrepo
+            Molina.
+          </BioSection>
+          <BioSection>
             <BioYear>2022</BioYear>
             He has completed the professional program in computer engineering at
-            Colombian Polytechnic Jaime Isaza Cadavid.
+            Politécnico Colombiano Jaime Isaza Cadavid.
           </BioSection>
           <BioSection>
             <BioYear>2022</BioYear>
@@ -113,11 +118,11 @@ const Page = () => {
             I ♥
           </Heading>
           <Paragraph>
-            Programming, Machine Learning, Learning new Technologies{' '}
+            Programming, machine learning, learning new technologies{' '}
             <Link href="https://github.com/Malcak/dotfiles">
-              Configuring my Work Environment
+              configuring my work environment
             </Link>
-            , Video Games and Music.
+            , video games and music.
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/stack">
