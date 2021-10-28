@@ -124,7 +124,7 @@ const Page = () => {
                 rightIcon={<ChevronRightIcon />}
                 colorScheme={useColorModeValue('purple', 'teal')}
               >
-                My Technology Stack
+                My Stack
               </Button>
             </NextLink>
           </Box>
