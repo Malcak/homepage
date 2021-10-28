@@ -4,8 +4,7 @@ import {
   Heading,
   List,
   ListItem,
-  SimpleGrid,
-  useColorModeValue
+  SimpleGrid
 } from '@chakra-ui/react'
 import {
   SiHtml5,
@@ -145,12 +144,7 @@ const Stack = () => {
           </ListItem>
           <ListItem mb={4}>
             <Section delay={1.3}>
-              <Skill
-                title="Linux"
-                value="55"
-                color={useColorModeValue('blackAlpha', 'whiteAlpha')}
-                icon={SiLinux}
-              />
+              <Skill title="Linux" value="55" color="orange" icon={SiLinux} />
             </Section>
           </ListItem>
           <ListItem mb={4}>
@@ -163,7 +157,7 @@ const Stack = () => {
               <Skill
                 title="Git y Github"
                 value="75"
-                color="orange"
+                color="red"
                 icon={SiGithub}
               />
             </Section>
