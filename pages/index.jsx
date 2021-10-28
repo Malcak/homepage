@@ -17,6 +17,7 @@ import {
   IoLogoGithub,
   IoLogoTwitter,
   IoLogoSteam,
+  IoLogoLinkedin,
   IoMail
 } from 'react-icons/io5'
 
@@ -144,6 +145,18 @@ const Page = () => {
                   onClick={onCopy}
                 >
                   {hasCopied ? 'Copied' : 'Malcakx@gmail.com'}
+                </Button>
+              </Link>
+            </ListItem>
+
+            <ListItem>
+              <Link href="https://www.linkedin.com/in/malcak/" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoLinkedin} />}
+                >
+                  Linked In
                 </Button>
               </Link>
             </ListItem>
