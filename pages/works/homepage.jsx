@@ -40,15 +40,15 @@ const Work = () => {
         </List>
 
         <WorkImage
-          src="/images/works/homepage_home.png"
+          src="/images/works/homepage_home.webp"
           alt="calendar app image"
         />
         <WorkImage
-          src="/images/works/homepage_works.png"
+          src="/images/works/homepage_works.webp"
           alt="calendar app image"
         />
         <WorkImage
-          src="/images/works/homepage_stack.png"
+          src="/images/works/homepage_stack.webp"
           alt="calendar app image"
         />
       </Container>

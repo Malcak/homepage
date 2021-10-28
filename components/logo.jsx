@@ -14,7 +14,7 @@ const LogoBox = styled.span`
 `
 
 const Logo = () => {
-  const logoImg = `/images/ursus_profile.png`
+  const logoImg = `/images/ursus_profile.webp`
 
   return (
     <Link href="/">

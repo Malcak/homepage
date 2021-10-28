@@ -4,11 +4,11 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem, WorkGridItem } from '../components/grid-item'
 
-import thumbCalendar from '../public/images/works/calendar_app_home.png'
-import thumbCalendarApi from '../public/images/works/calendar_api.png'
-import thumbHomepage from '../public/images/works/homepage_home.png'
-import thumbModelBanner from '../public/images/works/model_banner_iso.png'
-import thumbGitgub from '../public/images/works/github.jpg'
+import thumbCalendar from '../public/images/works/calendar_app_home.webp'
+import thumbCalendarApi from '../public/images/works/calendar_api.webp'
+import thumbHomepage from '../public/images/works/homepage_home.webp'
+import thumbModelBanner from '../public/images/works/model_banner_iso.webp'
+import thumbGitgub from '../public/images/works/github.webp'
 
 const Works = () => {
   return (

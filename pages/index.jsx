@@ -62,7 +62,7 @@ const Page = () => {
               maxWidth="100px"
               display="inline-block"
               borderRadius="full"
-              src="/images/profile_photo.jpg"
+              src="/images/profile_photo.webp"
               alt="Profile image"
             />
           </Box>
@@ -142,7 +142,6 @@ const Page = () => {
           </Heading>
           <List>
             <ListItem>
-              <Link>
                 <Button
                   variant="ghost"
                   colorScheme="teal"
@@ -151,11 +150,10 @@ const Page = () => {
                 >
                   {hasCopied ? 'Copied' : 'Malcakx@gmail.com'}
                 </Button>
-              </Link>
             </ListItem>
 
             <ListItem>
-              <Link href="https://www.linkedin.com/in/malcak/" target="_blank">
+              <Link href="https://www.linkedin.com/in/malcak/" rel="noopener" target="_blank">
                 <Button
                   variant="ghost"
                   colorScheme="teal"
@@ -167,7 +165,7 @@ const Page = () => {
             </ListItem>
 
             <ListItem>
-              <Link href="https://github.com/malcak" target="_blank">
+              <Link href="https://github.com/malcak" rel="noopener" target="_blank">
                 <Button
                   variant="ghost"
                   colorScheme="teal"
@@ -179,7 +177,7 @@ const Page = () => {
             </ListItem>
 
             <ListItem>
-              <Link href="https://twitter.com/malcakk" target="_blank">
+              <Link href="https://twitter.com/malcakk" rel="noopener" target="_blank">
                 <Button
                   variant="ghost"
                   colorScheme="teal"
@@ -193,6 +191,7 @@ const Page = () => {
             <ListItem>
               <Link
                 href="https://steamcommunity.com/profiles/76561198356341320/"
+                rel="noopener"
                 target="_blank"
               >
                 <Button

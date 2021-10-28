@@ -21,11 +21,11 @@ const Work = () => {
         </List>
 
         <WorkImage
-          src="/images/works/model_banner_front.png"
+          src="/images/works/model_banner_front.webp"
           alt="calendar app image"
         />
         <WorkImage
-          src="/images/works/model_banner_iso.png"
+          src="/images/works/model_banner_iso.webp"
           alt="calendar app image"
         />
       </Container>
