@@ -27,7 +27,7 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
         loading="lazy"
       />
       <LinkOverlay href={href} target="_blank">
-        <Text mt={2}>{title}</Text>
+        <Text mt={2} fontSize={20} fontWeight="bold">{title}</Text>
       </LinkOverlay>
       <Text fontSize={14}>{children}</Text>
     </LinkBox>
@@ -51,7 +51,7 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => (
           placeholder="blur"
         />
         <LinkOverlay href={`/works/${id}`}>
-          <Text mt={2} fontSize={20}>
+          <Text mt={2} fontSize={20} fontWeight="bold">
             {title}
           </Text>
         </LinkOverlay>
