@@ -71,7 +71,9 @@ const ModelBanner = () => {
       scene.add(ambientLight)
 
       const controls = new OrbitControls(camera, renderer.domElement)
+      controls.enabled = false
       controls.autoRotate = true
+      controls.autoRotateSpeed = 1
       controls.target = target
       setControls(controls)
 
