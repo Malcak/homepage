@@ -16,7 +16,7 @@ const Skill = ({ title, value, color, icon }) => {
   return (
     <Box
       borderRadius="lg"
-      bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+      bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.50')}
       p={3}
       mt={4}
       mb={6}

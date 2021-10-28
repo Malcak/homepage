@@ -17,7 +17,7 @@ const Works = () => {
         <Heading as="h2" fontSize={24} mb={4}>
           Works
         </Heading>
-        <SimpleGrid columns={[1, 1, 2]} gap={6}>
+        <SimpleGrid columns={[1, 1, 2]} gap={4}>
           <Section delay={0.1}>
             <WorkGridItem
               id="calendar-app"
