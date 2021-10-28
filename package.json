@@ -1,14 +1,10 @@
 {
   "name": "malcak-homepage",
-  "version": "1.0",
   "description": "Malcak's homepage and portfolio website",
+  "author": "Malcak<Malcakx@gmail.com>",
+  "version": "1.0",
+  "license": "MIT",
   "private": true,
-  "scripts": {
-    "build": "next build",
-    "dev": "next dev",
-    "lint": "next lint",
-    "start": "next start"
-  },
   "keywords": [
     "malcak",
     "homepage",
@@ -18,8 +14,12 @@
     "threejs",
     "framer motion"
   ],
-  "author": "Malcak<Malcakx@gmail.com>",
-  "license": "MIT",
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "lint": "next lint",
+    "start": "next start"
+  },
   "dependencies": {
     "@chakra-ui/icons": "^1.0.15",
     "@chakra-ui/react": "^1.6.9",
