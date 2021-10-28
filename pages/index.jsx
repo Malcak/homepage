@@ -156,7 +156,7 @@ const Page = () => {
                   colorScheme="teal"
                   leftIcon={<Icon as={IoLogoLinkedin} />}
                 >
-                  Linked In
+                  LinkedIn
                 </Button>
               </Link>
             </ListItem>
