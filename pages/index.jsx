@@ -47,7 +47,7 @@ const Page = () => {
             <Heading as="h2" variant="page-title">
               Malcak
             </Heading>
-            <p>Full-stack and Game developer (at least trying)</p>
+            <p>Full-stack and Game developer (working on it)</p>
           </Box>
           <Box
             flexShrink={0}
@@ -142,18 +142,22 @@ const Page = () => {
           </Heading>
           <List>
             <ListItem>
-                <Button
-                  variant="ghost"
-                  colorScheme="teal"
-                  leftIcon={<Icon as={IoMail} />}
-                  onClick={onCopy}
-                >
-                  {hasCopied ? 'Copied' : 'Malcakx@gmail.com'}
-                </Button>
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={IoMail} />}
+                onClick={onCopy}
+              >
+                {hasCopied ? 'Copied' : 'Malcakx@gmail.com'}
+              </Button>
             </ListItem>
 
             <ListItem>
-              <Link href="https://www.linkedin.com/in/malcak/" rel="noopener" target="_blank">
+              <Link
+                href="https://www.linkedin.com/in/malcak/"
+                rel="noopener"
+                target="_blank"
+              >
                 <Button
                   variant="ghost"
                   colorScheme="teal"
@@ -165,7 +169,11 @@ const Page = () => {
             </ListItem>
 
             <ListItem>
-              <Link href="https://github.com/malcak" rel="noopener" target="_blank">
+              <Link
+                href="https://github.com/malcak"
+                rel="noopener"
+                target="_blank"
+              >
                 <Button
                   variant="ghost"
                   colorScheme="teal"
@@ -177,7 +185,11 @@ const Page = () => {
             </ListItem>
 
             <ListItem>
-              <Link href="https://twitter.com/malcakk" rel="noopener" target="_blank">
+              <Link
+                href="https://twitter.com/malcakk"
+                rel="noopener"
+                target="_blank"
+              >
                 <Button
                   variant="ghost"
                   colorScheme="teal"
