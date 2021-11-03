@@ -1,9 +1,12 @@
-import { Box } from '@chakra-ui/react'
+import { Box, Link } from '@chakra-ui/react'
 
 const Footer = () => {
   return (
     <Box align="center" opacity={0.4} fontSize="sm">
-      &copy; {new Date().getFullYear()} Malcak. All Rights Reserved.
+      based on the design of{' '}
+      <Link href="https://www.craftz.dog/" rel="noopener" target="_blank">
+        @craftzdog
+      </Link>
     </Box>
   )
 }
