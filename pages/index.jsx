@@ -78,10 +78,8 @@ const Page = () => {
           <Paragraph>
             <strong>Manuel Alejandro Castaño Jaramillo</strong> is a computer
             engineering student based in Colombia, enthusiastic about the world
-            of ICT and video games, in constant study and growth. Willing to
-            work in group environments where teamwork and communication is
-            crucial. He is currently working to add quality projects to his
-            portfolio.
+            of ICT and video games, in constant study and growth. He is
+            currently working on quality projects to gain experience.
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/works">
