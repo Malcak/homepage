@@ -23,7 +23,7 @@ const LinkItem = ({ href, path, _target, children, ...props }) => {
   const active = path === href
   const activeColor = useColorModeValue('whiteAlpha.900', 'gray.800')
   const inactiveColor = useColorModeValue('gray.800', 'whiteAlpha.900')
-  const bgColor = useColorModeValue('#805AD5', 'grassTeal')
+  const bgColor = useColorModeValue('#b16286', '#8ec07c')
 
   return (
     <NextLink href={href} passHref>
@@ -31,6 +31,7 @@ const LinkItem = ({ href, path, _target, children, ...props }) => {
         p={2}
         bg={active ? bgColor : undefined}
         color={active ? activeColor : inactiveColor}
+        borderRadius="md"
         _target={_target}
         {...props}
       >
@@ -48,7 +49,6 @@ const Navbar = props => {
       position="fixed"
       as="nav"
       w="100%"
-      bg={useColorModeValue('#ffffff40', '#20202380')}
       style={{ backdropFilter: 'blur(10px)' }}
       zIndex={1}
       {...props}

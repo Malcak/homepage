@@ -9,7 +9,7 @@ import {
 import { IoStar } from 'react-icons/io5'
 
 const Skill = ({ title, value, color, icon }) => {
-  const defaultScheme = useColorModeValue('purple', 'teal')
+  const defaultScheme = useColorModeValue('gruvPurple', 'gruvAqua')
   const colorScheme = color ? color : defaultScheme
   const defaultIcon = icon ? icon : IoStar
 

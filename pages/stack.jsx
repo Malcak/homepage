@@ -64,12 +64,12 @@ const Stack = () => {
         <List mt={6}>
           <ListItem mb={4}>
             <Section delay={0.1}>
-              <Skill title="HTML" value="75" color="red" icon={SiHtml5} />
+              <Skill title="HTML" value="75" color="gruvRed" icon={SiHtml5} />
             </Section>
           </ListItem>
           <ListItem mb={4}>
             <Section delay={0.2}>
-              <Skill title="CSS" value="55" color="blue" icon={SiCss3} />
+              <Skill title="CSS" value="55" color="gruvBlue" icon={SiCss3} />
             </Section>
           </ListItem>
           <ListItem mb={4}>
@@ -77,7 +77,7 @@ const Stack = () => {
               <Skill
                 title="JavaScript"
                 value="80"
-                color="yellow"
+                color="gruvYellow"
                 icon={SiJavascript}
               />
             </Section>
@@ -87,7 +87,7 @@ const Stack = () => {
               <Skill
                 title="TypeScript"
                 value="65"
-                color="blue"
+                color="gruvBlue"
                 icon={SiTypescript}
               />
             </Section>
@@ -97,39 +97,54 @@ const Stack = () => {
               <Skill
                 title="NodeJS"
                 value="65"
-                color="green"
+                color="gruvGreen"
                 icon={SiNodedotjs}
               />
             </Section>
           </ListItem>
           <ListItem mb={4}>
             <Section delay={0.6}>
-              <Skill title="React" value="75" color="teal" icon={SiReact} />
+              <Skill title="React" value="75" color="gruvAqua" icon={SiReact} />
             </Section>
           </ListItem>
           <ListItem mb={4}>
             <Section delay={0.7}>
-              <Skill title="Jest" value="55" color="purple" icon={SiJest} />
+              <Skill title="Jest" value="55" color="gruvPurple" icon={SiJest} />
             </Section>
           </ListItem>
           <ListItem mb={4}>
             <Section delay={0.8}>
-              <Skill title="Angular" value="60" color="red" icon={SiAngular} />
+              <Skill
+                title="Angular"
+                value="60"
+                color="gruvRed"
+                icon={SiAngular}
+              />
             </Section>
           </ListItem>
           <ListItem mb={4}>
             <Section delay={0.9}>
-              <Skill title="Java" value="40" color="orange" icon={SiJava} />
+              <Skill title="Java" value="40" color="gruvOrange" icon={SiJava} />
             </Section>
           </ListItem>
           <ListItem mb={4}>
             <Section delay={1.0}>
-              <Skill title="C++" value="35" color="pink" icon={SiCplusplus} />
+              <Skill
+                title="C++"
+                value="35"
+                color="gruvPurple"
+                icon={SiCplusplus}
+              />
             </Section>
           </ListItem>
           <ListItem mb={4}>
             <Section delay={1.1}>
-              <Skill title="SQL" value="65" color="blue" icon={SiPostgresql} />
+              <Skill
+                title="SQL"
+                value="65"
+                color="gruvBlue"
+                icon={SiPostgresql}
+              />
             </Section>
           </ListItem>
           <ListItem mb={4}>
@@ -137,19 +152,29 @@ const Stack = () => {
               <Skill
                 title="MongoDB"
                 value="60"
-                color="green"
+                color="gruvGreen"
                 icon={SiMongodb}
               />
             </Section>
           </ListItem>
           <ListItem mb={4}>
             <Section delay={1.3}>
-              <Skill title="Linux" value="55" color="orange" icon={SiLinux} />
+              <Skill
+                title="Linux"
+                value="55"
+                color="gruvOrange"
+                icon={SiLinux}
+              />
             </Section>
           </ListItem>
           <ListItem mb={4}>
             <Section delay={1.4}>
-              <Skill title="Docker" value="65" color="blue" icon={SiDocker} />
+              <Skill
+                title="Docker"
+                value="65"
+                color="gruvBlue"
+                icon={SiDocker}
+              />
             </Section>
           </ListItem>
           <ListItem mb={4}>
@@ -157,7 +182,7 @@ const Stack = () => {
               <Skill
                 title="Git y Github"
                 value="75"
-                color="red"
+                color="gruvRed"
                 icon={SiGithub}
               />
             </Section>

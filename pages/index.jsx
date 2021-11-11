@@ -1,11 +1,13 @@
 import NextLink from 'next/link'
 import {
+  Alert,
+  AlertIcon,
+  Avatar,
   Box,
   Button,
   Container,
   Heading,
   Icon,
-  Image,
   Link,
   List,
   ListItem,
@@ -32,16 +34,19 @@ const Page = () => {
   return (
     <Layout>
       <Container>
-        <Box
-          borderRadius="lg"
-          bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+        <Alert
+          status="info"
+          variant="left-accent"
+          borderRadius="md"
+          colorScheme={useColorModeValue('gruvPurple', 'gruvAqua')}
+          color="whiteAlpha.900"
           p={3}
           mt={4}
           mb={6}
-          align="center"
         >
+          <AlertIcon />
           Hello, I&apos;m a full-stack developer based in Colombia!
-        </Box>
+        </Alert>
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
@@ -55,15 +60,13 @@ const Page = () => {
             ml={{ md: 6 }}
             align="center"
           >
-            <Image
+            <Avatar
+              size="xl"
+              name="Manuel Alejandro Castaño Jaramillo"
+              bg="whiteAlpha.800"
               borderColor="whiteAlpha.800"
               borderWidth={2}
-              borderStyle="solid"
-              maxWidth="100px"
-              display="inline-block"
-              borderRadius="full"
               src="/images/profile_photo.webp"
-              alt="Profile image"
             />
           </Box>
         </Box>
@@ -84,7 +87,7 @@ const Page = () => {
             <NextLink href="/works">
               <Button
                 rightIcon={<ChevronRightIcon />}
-                colorScheme={useColorModeValue('purple', 'teal')}
+                colorScheme={useColorModeValue('gruvPurple', 'gruvAqua')}
               >
                 My Portfolio
               </Button>
@@ -129,7 +132,7 @@ const Page = () => {
             <NextLink href="/stack">
               <Button
                 rightIcon={<ChevronRightIcon />}
-                colorScheme={useColorModeValue('purple', 'teal')}
+                colorScheme={useColorModeValue('gruvPurple', 'gruvAqua')}
               >
                 My Stack
               </Button>
@@ -145,7 +148,7 @@ const Page = () => {
             <ListItem>
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme={useColorModeValue('gruvAqua', 'gruvPurple')}
                 leftIcon={<Icon as={IoMail} />}
                 onClick={onCopy}
               >
@@ -161,7 +164,7 @@ const Page = () => {
               >
                 <Button
                   variant="ghost"
-                  colorScheme="teal"
+                  colorScheme={useColorModeValue('gruvAqua', 'gruvPurple')}
                   leftIcon={<Icon as={IoLogoLinkedin} />}
                 >
                   LinkedIn
@@ -177,7 +180,7 @@ const Page = () => {
               >
                 <Button
                   variant="ghost"
-                  colorScheme="teal"
+                  colorScheme={useColorModeValue('gruvAqua', 'gruvPurple')}
                   leftIcon={<Icon as={IoLogoGithub} />}
                 >
                   @Malcak
@@ -193,7 +196,7 @@ const Page = () => {
               >
                 <Button
                   variant="ghost"
-                  colorScheme="teal"
+                  colorScheme={useColorModeValue('gruvAqua', 'gruvPurple')}
                   leftIcon={<Icon as={IoLogoTwitter} />}
                 >
                   @Malcakk
@@ -209,7 +212,7 @@ const Page = () => {
               >
                 <Button
                   variant="ghost"
-                  colorScheme="teal"
+                  colorScheme={useColorModeValue('gruvAqua', 'gruvPurple')}
                   leftIcon={<Icon as={IoLogoSteam} />}
                 >
                   @Malakk
