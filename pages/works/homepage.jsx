@@ -13,7 +13,8 @@ const Work = () => {
           Homepage <Badge>2021</Badge>{' '}
         </Title>
         <P>
-          Hompage website to expose my information, my portfolio, and my skills.
+          Homepage website to expose my information, my portfolio, and my
+          skills.
         </P>
 
         <List ml={4} my={4}>
