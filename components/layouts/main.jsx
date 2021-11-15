@@ -17,7 +17,7 @@ const Main = ({ children, router }) => {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Malcak&apos;s Homepage</title>
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="/favicon.svg" type="image/svg" />
         <meta name="description" content="Malcak's homepage" />
         <meta name="author" content="Malcak" />
         <meta name="twitter:card" content="summary_large_image" />
