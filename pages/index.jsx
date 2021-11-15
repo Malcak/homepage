@@ -2,12 +2,12 @@ import NextLink from 'next/link'
 import {
   Alert,
   AlertIcon,
-  Avatar,
   Box,
   Button,
   Container,
   Heading,
   Icon,
+  Image,
   Link,
   List,
   ListItem,
@@ -60,13 +60,16 @@ const Page = () => {
             ml={{ md: 6 }}
             align="center"
           >
-            <Avatar
-              size="xl"
-              name="Manuel Alejandro Castaño Jaramillo"
-              bg="whiteAlpha.800"
-              borderColor="whiteAlpha.800"
-              borderWidth={2}
+            <Image
               src="/images/profile_photo.webp"
+              alt="Profile image"
+              display="inline-block"
+              borderColor="whiteAlpha.800"
+              borderRadius="full"
+              borderStyle="solid"
+              borderWidth={2}
+              height="6rem"
+              width="6rem"
             />
           </Box>
         </Box>
