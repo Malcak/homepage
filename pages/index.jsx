@@ -123,7 +123,7 @@ const Page = () => {
             I ♥
           </Heading>
           <Paragraph>
-            Programming, machine learning, learning new technologies{' '}
+            Programming, machine learning, learning new technologies,{' '}
             <Link href="https://github.com/Malcak/dotfiles">
               configuring my work environment
             </Link>
