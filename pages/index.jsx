@@ -124,7 +124,11 @@ const Page = () => {
           </Heading>
           <Paragraph>
             Programming, machine learning, learning new technologies,{' '}
-            <Link href="https://github.com/Malcak/dotfiles">
+            <Link
+              href="https://github.com/Malcak/dotfiles"
+              rel="noopener"
+              target="_blank"
+            >
               configuring my work environment
             </Link>
             , video games and music.
