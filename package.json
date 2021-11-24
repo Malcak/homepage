@@ -1,8 +1,16 @@
 {
   "name": "malcak-homepage",
   "description": "Malcak's homepage and portfolio website",
-  "author": "Malcak<Malcakx@gmail.com>",
-  "version": "1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Malcak/homepage.git"
+  },
+  "author": {
+    "name": "Malcak",
+    "email": "Malcakx@gmail.com",
+    "url": "https://malcak.vercel.app"
+  },
+  "version": "1.0.0",
   "license": "MIT",
   "private": true,
   "keywords": [
@@ -10,6 +18,7 @@
     "homepage",
     "portfolio",
     "react",
+    "next",
     "chakra ui",
     "threejs",
     "framer motion"
