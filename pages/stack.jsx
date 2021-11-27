@@ -15,8 +15,6 @@ import {
   SiReact,
   SiJest,
   SiAngular,
-  SiJava,
-  SiCplusplus,
   SiGo,
   SiRust,
   SiPython,
@@ -124,21 +122,6 @@ const Stack = () => {
           </ListItem>
           <ListItem mb={4}>
             <Section delay={0.9}>
-              <Skill title="Java" value="40" color="gruvOrange" icon={SiJava} />
-            </Section>
-          </ListItem>
-          <ListItem mb={4}>
-            <Section delay={1.0}>
-              <Skill
-                title="C++"
-                value="35"
-                color="gruvPurple"
-                icon={SiCplusplus}
-              />
-            </Section>
-          </ListItem>
-          <ListItem mb={4}>
-            <Section delay={1.1}>
               <Skill
                 title="SQL"
                 value="65"
@@ -148,7 +131,7 @@ const Stack = () => {
             </Section>
           </ListItem>
           <ListItem mb={4}>
-            <Section delay={1.2}>
+            <Section delay={1.0}>
               <Skill
                 title="MongoDB"
                 value="60"
@@ -158,7 +141,7 @@ const Stack = () => {
             </Section>
           </ListItem>
           <ListItem mb={4}>
-            <Section delay={1.3}>
+            <Section delay={1.1}>
               <Skill
                 title="Linux"
                 value="55"
@@ -168,7 +151,7 @@ const Stack = () => {
             </Section>
           </ListItem>
           <ListItem mb={4}>
-            <Section delay={1.4}>
+            <Section delay={1.2}>
               <Skill
                 title="Docker"
                 value="65"
@@ -178,7 +161,7 @@ const Stack = () => {
             </Section>
           </ListItem>
           <ListItem mb={4}>
-            <Section delay={1.5}>
+            <Section delay={1.3}>
               <Skill
                 title="Git y Github"
                 value="75"
