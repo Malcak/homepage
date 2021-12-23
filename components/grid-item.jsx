@@ -25,6 +25,10 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
         className="grid-item-thumbnail"
         placeholder="blur"
         loading="lazy"
+        layout="responsive"
+        width={16}
+        height={9}
+        quality={64}
       />
       <LinkOverlay href={href} target="_blank">
         <Text mt={2} fontSize={20} fontWeight="bold">{title}</Text>
@@ -49,6 +53,10 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => (
           alt={title}
           className="grid-item-thumbnail"
           placeholder="blur"
+          layout="responsive"
+          width={16}
+          height={9}
+          quality={65}
         />
         <LinkOverlay href={`/works/${id}`}>
           <Text mt={2} fontSize={20} fontWeight="bold">
@@ -66,6 +74,7 @@ export const GridItemStyle = () => (
     styles={`
       .grid-item-thumbnail {
         border-radius: 0.375rem;
+        aspect-ratio: 16 / 9;
       }
     `}
   />
