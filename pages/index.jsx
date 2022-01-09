@@ -52,7 +52,10 @@ const Page = () => {
             <Heading as="h2" variant="page-title">
               Malcak
             </Heading>
-            <p>Full-stack and Game developer (working on it)</p>
+            <p>
+              Full-stack and game developer (not completely but I&apos;m working
+              on it)
+            </p>
           </Box>
           <Box
             flexShrink={0}
@@ -79,10 +82,11 @@ const Page = () => {
             Work
           </Heading>
           <Paragraph>
-            <strong>Manuel Alejandro Castaño Jaramillo</strong> is a computer
-            engineering student based in Colombia, enthusiastic about the world
-            of ICT and video games, in constant study and growth. He is
-            currently working on quality projects to gain experience.
+            Hello, I&apos;m <strong>Manuel Alejandro Castaño Jaramillo</strong>,
+            I&apos;m a computer engineering student from Colombia, enthusiastic
+            about web development and video games, in constant learning and
+            growing. I&apos;m currently working on quality projects to gain
+            experience.
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/works">
