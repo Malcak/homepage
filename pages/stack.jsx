@@ -14,12 +14,10 @@ import {
   SiNodedotjs,
   SiReact,
   SiJest,
-  SiAngular,
   SiGo,
   SiRust,
   SiPython,
   SiPostgresql,
-  SiMongodb,
   SiGithub,
   SiGnubash,
   SiLinux,
@@ -47,13 +45,12 @@ const Stack = () => {
             My skills
           </Heading>
           <Paragraph>
-            The (small) set of technologies I work with, how well I master them,
-            and which ones I plan to learn. These skills are based only on
+            The set of technologies I work with, how well I master them, and
+            which ones I plan to learn. These skills are based only on
             technologies, i have other skills such as algorithmics, object
             oriented programming, functional programming, architectural
-            patterns, frameworks, discrete mathematics, among others. but they
-            are more difficult to measure through a simple progress bar and less
-            specific.
+            patterns, among others. but they are more difficult to measure
+            through a simple progress bar and less specific.
           </Paragraph>
         </Box>
         <Heading as="h3" fontSize={20} variant="section-title">
@@ -62,7 +59,7 @@ const Stack = () => {
         <List mt={6}>
           <ListItem mb={4}>
             <Section delay={0.1}>
-              <Skill title="HTML" value="75" color="gruvRed" icon={SiHtml5} />
+              <Skill title="HTML" value="80" color="gruvRed" icon={SiHtml5} />
             </Section>
           </ListItem>
           <ListItem mb={4}>
@@ -84,7 +81,7 @@ const Stack = () => {
             <Section delay={0.4}>
               <Skill
                 title="TypeScript"
-                value="65"
+                value="70"
                 color="gruvBlue"
                 icon={SiTypescript}
               />
@@ -102,7 +99,7 @@ const Stack = () => {
           </ListItem>
           <ListItem mb={4}>
             <Section delay={0.6}>
-              <Skill title="React" value="75" color="gruvAqua" icon={SiReact} />
+              <Skill title="React" value="80" color="gruvAqua" icon={SiReact} />
             </Section>
           </ListItem>
           <ListItem mb={4}>
@@ -113,16 +110,6 @@ const Stack = () => {
           <ListItem mb={4}>
             <Section delay={0.8}>
               <Skill
-                title="Angular"
-                value="60"
-                color="gruvRed"
-                icon={SiAngular}
-              />
-            </Section>
-          </ListItem>
-          <ListItem mb={4}>
-            <Section delay={0.9}>
-              <Skill
                 title="SQL"
                 value="65"
                 color="gruvBlue"
@@ -131,17 +118,7 @@ const Stack = () => {
             </Section>
           </ListItem>
           <ListItem mb={4}>
-            <Section delay={1.0}>
-              <Skill
-                title="MongoDB"
-                value="60"
-                color="gruvGreen"
-                icon={SiMongodb}
-              />
-            </Section>
-          </ListItem>
-          <ListItem mb={4}>
-            <Section delay={1.1}>
+            <Section delay={0.9}>
               <Skill
                 title="Linux"
                 value="55"
@@ -151,20 +128,20 @@ const Stack = () => {
             </Section>
           </ListItem>
           <ListItem mb={4}>
-            <Section delay={1.2}>
+            <Section delay={1.0}>
               <Skill
                 title="Docker"
-                value="65"
+                value="70"
                 color="gruvBlue"
                 icon={SiDocker}
               />
             </Section>
           </ListItem>
           <ListItem mb={4}>
-            <Section delay={1.3}>
+            <Section delay={1.1}>
               <Skill
                 title="Git y Github"
-                value="75"
+                value="80"
                 color="gruvRed"
                 icon={SiGithub}
               />
