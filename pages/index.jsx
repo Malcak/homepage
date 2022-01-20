@@ -20,7 +20,9 @@ import {
   IoLogoTwitter,
   IoLogoSteam,
   IoLogoLinkedin,
-  IoMail
+  IoMail,
+  IoClipboard,
+  IoCheckmark
 } from 'react-icons/io5'
 
 import Layout from '../components/layouts/article'
@@ -155,13 +157,25 @@ const Page = () => {
           </Heading>
           <List>
             <ListItem>
+              <Link href="mailto:malcak@gmail.com">
+                <Button
+                  variant="ghost"
+                  colorScheme={useColorModeValue('gruvAqua', 'gruvPurple')}
+                  leftIcon={<Icon as={IoMail} />}
+                >
+                  Malcakx@gmail.com
+                </Button>
+              </Link>
               <Button
                 variant="ghost"
                 colorScheme={useColorModeValue('gruvAqua', 'gruvPurple')}
-                leftIcon={<Icon as={IoMail} />}
                 onClick={onCopy}
               >
-                {hasCopied ? 'Copied' : 'Malcakx@gmail.com'}
+                {hasCopied ? (
+                  <Icon as={IoCheckmark} />
+                ) : (
+                  <Icon as={IoClipboard} />
+                )}
               </Button>
             </ListItem>
 
