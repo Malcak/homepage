@@ -14,13 +14,13 @@ const LogoBox = styled.span`
 `
 
 const Logo = () => {
-  const logoImg = `/images/ursus_profile.webp`
+  const logoImg = `/images/ursus_profile.svg`
 
   return (
     <Link href="/">
       <a>
         <LogoBox>
-          <Image src={logoImg} width={30} height={30} alt="logo" />
+          <Image src={logoImg} width={28} height={28} alt="logo" />
         </LogoBox>
         <Text
           color={useColorModeValue('gray.800', 'whiteAlpha.900')}
