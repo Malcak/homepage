@@ -14,6 +14,7 @@ const LogoBox = styled.span`
 
 const LinkWrapper = styled.a`
   white-space: nowrap;
+  cursor: pointer;
 `
 
 const Logo = () => {
