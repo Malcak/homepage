@@ -174,7 +174,11 @@ const Page = () => {
           </Heading>
           <List>
             <ListItem>
-              <Link href="mailto:malcak@gmail.com">
+              <Link
+                href="mailto:malcak@gmail.com"
+                rel="noopener"
+                target="_blank"
+              >
                 <Button
                   variant="ghost"
                   colorScheme={useColorModeValue('gruvAqua', 'gruvPurple')}
