@@ -87,8 +87,8 @@ const Page = () => {
             Hello, I&apos;m <strong>Manuel Alejandro Castaño Jaramillo</strong>,
             I&apos;m a computer engineering student from Colombia, enthusiastic
             about web development and video games, in constant learning and
-            growing. I&apos;m currently working on quality projects to gain
-            experience.
+            growing. I&apos;m currently working at C&T as a backend developer
+            with NodeJS.
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/works">
@@ -115,13 +115,30 @@ const Page = () => {
             Molina.
           </BioSection>
           <BioSection>
+            <BioYear>2021</BioYear>
+            He create CalendarApp, an event management application with
+            markdown-based notes (a personal project for learning purposes). See{' '}
+            <NextLink href="/works/calendar-app">
+              <Link>here.</Link>
+            </NextLink>
+          </BioSection>
+          <BioSection>
+            <BioYear>2021</BioYear>
+            He create TodoNative, a smoothly animated ToDo app built with React
+            Native (a personal project for learning purposes). See{' '}
+            <NextLink href="/works/todo-native">
+              <Link>here.</Link>
+            </NextLink>
+          </BioSection>
+          <BioSection>
             <BioYear>2022</BioYear>
             He has completed the professional program in computer engineering at
             Politécnico Colombiano Jaime Isaza Cadavid.
           </BioSection>
           <BioSection>
             <BioYear>2022</BioYear>
-            Works as a freelance (at least I hope so).
+            Works as a backend developer with NodeJS (and sometimes a bit of
+            python).
           </BioSection>
         </Section>
         <Section delay={0.3}>
