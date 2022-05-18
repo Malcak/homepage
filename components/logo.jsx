@@ -1,6 +1,5 @@
 import Link from 'next/link'
-import Image from 'next/image'
-import { Text, useColorModeValue } from '@chakra-ui/react'
+import { Image, Text, useColorModeValue } from '@chakra-ui/react'
 import styled from '@emotion/styled'
 
 const LogoBox = styled.span`
@@ -8,9 +7,13 @@ const LogoBox = styled.span`
   display: inline-flex;
   font-weight: bold;
   font-size: 18px;
-  height: 30px;
+  height: 1.5rem;
   line-height: 20px;
   padding: 10px;
+`
+
+const LinkWrapper = styled.a`
+  white-space: nowrap;
 `
 
 const Logo = () => {
@@ -18,9 +21,9 @@ const Logo = () => {
 
   return (
     <Link href="/">
-      <a>
+      <LinkWrapper>
         <LogoBox>
-          <Image src={logoImg} width={28} height={28} alt="logo" />
+          <Image src={logoImg} alt="Malcak logo" boxSize="1.5rem" />
         </LogoBox>
         <Text
           color={useColorModeValue('gray.800', 'whiteAlpha.900')}
@@ -31,7 +34,7 @@ const Logo = () => {
         >
           Malcak
         </Text>
-      </a>
+      </LinkWrapper>
     </Link>
   )
 }
