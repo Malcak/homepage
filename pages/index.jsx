@@ -118,7 +118,7 @@ const Page = () => {
             <BioYear>2021</BioYear>
             He create CalendarApp, an event management application with
             markdown-based notes (a personal project for learning purposes). See{' '}
-            <NextLink href="/works/calendar-app">
+            <NextLink href="/works/calendar-app" passHref>
               <Link>here.</Link>
             </NextLink>
           </BioSection>
@@ -126,7 +126,7 @@ const Page = () => {
             <BioYear>2021</BioYear>
             He create TodoNative, a smoothly animated ToDo app built with React
             Native (a personal project for learning purposes). See{' '}
-            <NextLink href="/works/todo-native">
+            <NextLink href="/works/todo-native" passHref>
               <Link>here.</Link>
             </NextLink>
           </BioSection>
