@@ -21,7 +21,7 @@ const Logo = () => {
   const logoImg = `/images/ursus_profile.svg`
 
   return (
-    <Link href="/" passHref>
+    <Link href="/" passHref scroll={false}>
       <LinkWrapper>
         <LogoBox>
           <Image src={logoImg} alt="Malcak logo" boxSize="1.5rem" />
