@@ -17,7 +17,7 @@ const NotFound = () => {
       <Divider my={6} />
 
       <Box my={6} align="center">
-        <NextLink href="/">
+        <NextLink href="/" passHref>
           <Button colorScheme={useColorModeValue('gruvPurple', 'gruvAqua')}>
             Return to home
           </Button>

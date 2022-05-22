@@ -102,7 +102,7 @@ const Page = () => {
             with NodeJS.
           </Paragraph>
           <Box align="center" my={4}>
-            <NextLink href="/works" scroll={false}>
+            <NextLink href="/works" passHref scroll={false}>
               <Button
                 rightIcon={<ChevronRightIcon />}
                 colorScheme={useColorModeValue('gruvPurple', 'gruvAqua')}
@@ -168,7 +168,7 @@ const Page = () => {
             , video games and music.
           </Paragraph>
           <Box align="center" my={4}>
-            <NextLink href="/stack" scroll={false}>
+            <NextLink href="/stack" passHref scroll={false}>
               <Button
                 rightIcon={<ChevronRightIcon />}
                 colorScheme={useColorModeValue('gruvPurple', 'gruvAqua')}

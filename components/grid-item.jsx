@@ -48,7 +48,7 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => (
     bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.50')}
     _hover={{ boxShadow: 'outline' }}
   >
-    <NextLink href={`/works/${id}`} scroll={false}>
+    <NextLink href={`/works/${id}`} passHref scroll={false}>
       <LinkBox p={3} cursor="pointer">
         <Image
           src={thumbnail}
