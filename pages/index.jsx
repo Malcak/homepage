@@ -91,7 +91,7 @@ const Page = () => {
             with NodeJS.
           </Paragraph>
           <Box align="center" my={4}>
-            <NextLink href="/works">
+            <NextLink href="/works" scroll={false}>
               <Button
                 rightIcon={<ChevronRightIcon />}
                 colorScheme={useColorModeValue('gruvPurple', 'gruvAqua')}
@@ -118,7 +118,7 @@ const Page = () => {
             <BioYear>2021</BioYear>
             He create CalendarApp, an event management application with
             markdown-based notes (a personal project for learning purposes). See{' '}
-            <NextLink href="/works/calendar-app" passHref>
+            <NextLink href="/works/calendar-app" passHref scroll={false}>
               <Link>here.</Link>
             </NextLink>
           </BioSection>
@@ -126,7 +126,7 @@ const Page = () => {
             <BioYear>2021</BioYear>
             He create TodoNative, a smoothly animated ToDo app built with React
             Native (a personal project for learning purposes). See{' '}
-            <NextLink href="/works/todo-native" passHref>
+            <NextLink href="/works/todo-native" passHref scroll={false}>
               <Link>here.</Link>
             </NextLink>
           </BioSection>
@@ -157,7 +157,7 @@ const Page = () => {
             , video games and music.
           </Paragraph>
           <Box align="center" my={4}>
-            <NextLink href="/stack">
+            <NextLink href="/stack" scroll={false}>
               <Button
                 rightIcon={<ChevronRightIcon />}
                 colorScheme={useColorModeValue('gruvPurple', 'gruvAqua')}
