@@ -20,10 +20,12 @@ const Main = ({ children, router }) => {
         <link rel="shortcut icon" href="/favicon.svg" type="image/svg" />
         <meta name="description" content="Malcak's homepage" />
         <meta name="author" content="Malcak" />
+        <meta name="twitter:title" content="Malcak" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@malcakk" />
         <meta name="twitter:creator" content="@malcakk" />
-        <meta property="og:site_name" content="Malcak's Homepage" />
+        <meta property="og:site_name" content="Malcak" />
+        <meta name="og:title" content="Malcak" />
         <meta property="og:type" content="website" />
       </Head>
 
