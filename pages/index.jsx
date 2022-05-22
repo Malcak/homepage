@@ -1,4 +1,5 @@
 import NextLink from 'next/link'
+import Image from 'next/image'
 import {
   Alert,
   AlertIcon,
@@ -6,13 +7,12 @@ import {
   Button,
   Container,
   Heading,
-  Icon,
-  Image,
   Link,
   List,
   ListItem,
   useClipboard,
-  useColorModeValue
+  useColorModeValue,
+  chakra
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import {
@@ -29,6 +29,10 @@ import Layout from '../components/layouts/article'
 import Paragraph from '../components/paragraph'
 import Section from '../components/section'
 import { BioSection, BioYear } from '../components/bio'
+
+const ProfileImage = chakra(Image, {
+  shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
+})
 
 const Page = () => {
   const { hasCopied, onCopy } = useClipboard('Malcakx@gmail.com')
@@ -65,17 +69,24 @@ const Page = () => {
             ml={{ md: 6 }}
             align="center"
           >
-            <Image
-              src="/images/profile_photo.webp"
-              alt="Profile image"
-              display="inline-block"
+            <Box
               borderColor="whiteAlpha.800"
-              borderRadius="full"
-              borderStyle="solid"
               borderWidth={2}
-              height="6rem"
-              width="6rem"
-            />
+              borderStyle="solid"
+              width="100px"
+              height="100px"
+              display="inline-block"
+              borderRadius="full"
+              overflow="hidden"
+            >
+              <ProfileImage
+                src="/images/profile_photo.webp"
+                alt="Profile image"
+                borderRadius="full"
+                width="100%"
+                height="100%"
+              />
+            </Box>
           </Box>
         </Box>
 
@@ -182,7 +193,7 @@ const Page = () => {
                 <Button
                   variant="ghost"
                   colorScheme={useColorModeValue('gruvAqua', 'gruvPurple')}
-                  leftIcon={<Icon as={IoMail} />}
+                  leftIcon={<IoMail />}
                 >
                   Malcakx@gmail.com
                 </Button>
@@ -192,11 +203,7 @@ const Page = () => {
                 colorScheme={useColorModeValue('gruvAqua', 'gruvPurple')}
                 onClick={onCopy}
               >
-                {hasCopied ? (
-                  <Icon as={IoCheckmark} />
-                ) : (
-                  <Icon as={IoClipboard} />
-                )}
+                {hasCopied ? <IoCheckmark /> : <IoClipboard />}
               </Button>
             </ListItem>
 
@@ -209,7 +216,7 @@ const Page = () => {
                 <Button
                   variant="ghost"
                   colorScheme={useColorModeValue('gruvAqua', 'gruvPurple')}
-                  leftIcon={<Icon as={IoLogoLinkedin} />}
+                  leftIcon={<IoLogoLinkedin />}
                 >
                   LinkedIn
                 </Button>
@@ -225,7 +232,7 @@ const Page = () => {
                 <Button
                   variant="ghost"
                   colorScheme={useColorModeValue('gruvAqua', 'gruvPurple')}
-                  leftIcon={<Icon as={IoLogoGithub} />}
+                  leftIcon={<IoLogoGithub />}
                 >
                   @Malcak
                 </Button>
@@ -241,7 +248,7 @@ const Page = () => {
                 <Button
                   variant="ghost"
                   colorScheme={useColorModeValue('gruvAqua', 'gruvPurple')}
-                  leftIcon={<Icon as={IoLogoTwitter} />}
+                  leftIcon={<IoLogoTwitter />}
                 >
                   @Malcakk
                 </Button>
@@ -257,7 +264,7 @@ const Page = () => {
                 <Button
                   variant="ghost"
                   colorScheme={useColorModeValue('gruvAqua', 'gruvPurple')}
-                  leftIcon={<Icon as={IoLogoSteam} />}
+                  leftIcon={<IoLogoSteam />}
                 >
                   @Malakk
                 </Button>
