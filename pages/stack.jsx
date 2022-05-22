@@ -168,4 +168,12 @@ const Stack = () => {
   )
 }
 
+export function getServerSideProps({ req }) {
+  return {
+    props: {
+      cookies: req.headers.cookie ?? ''
+    }
+  }
+}
+
 export default Stack

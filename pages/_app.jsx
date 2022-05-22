@@ -1,11 +1,10 @@
-import { ChakraProvider } from '@chakra-ui/react'
 import { AnimatePresence } from 'framer-motion'
 import 'focus-visible/dist/focus-visible'
 
+import Chakra from '../components/chakra'
 import Fonts from '../components/fonts'
 import FocusVisibleStyle from '../components/focus-visible'
 import Layout from '../components/layouts/main'
-import theme from '../lib/theme'
 
 if (typeof window !== 'undefined') {
   window.history.scrollRestoration = 'manual'
@@ -13,7 +12,7 @@ if (typeof window !== 'undefined') {
 
 const Website = ({ Component, pageProps, router }) => {
   return (
-    <ChakraProvider theme={theme}>
+    <Chakra cookies={pageProps.cookies}>
       <Fonts />
       <FocusVisibleStyle />
       <Layout router={router}>
@@ -27,7 +26,7 @@ const Website = ({ Component, pageProps, router }) => {
           <Component {...pageProps} key={router.route} />
         </AnimatePresence>
       </Layout>
-    </ChakraProvider>
+    </Chakra>
   )
 }
 

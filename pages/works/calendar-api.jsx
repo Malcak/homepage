@@ -54,4 +54,12 @@ const Work = () => {
   )
 }
 
+export function getServerSideProps({ req }) {
+  return {
+    props: {
+      cookies: req.headers.cookie ?? ''
+    }
+  }
+}
+
 export default Work
