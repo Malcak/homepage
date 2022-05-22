@@ -19,7 +19,7 @@ import { IoLogoGithub } from 'react-icons/io5'
 import Logo from './logo'
 import ThemeToggleButton from './theme-toggle-button'
 
-const LinkItem = ({ href, path, _target, children, ...props }) => {
+const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
   const activeColor = useColorModeValue('whiteAlpha.900', 'gray.800')
   const inactiveColor = useColorModeValue('gray.800', 'whiteAlpha.900')
@@ -32,7 +32,7 @@ const LinkItem = ({ href, path, _target, children, ...props }) => {
         bg={active ? bgColor : undefined}
         color={active ? activeColor : inactiveColor}
         borderRadius="md"
-        _target={_target}
+        target={target}
         {...props}
       >
         {children}
@@ -82,7 +82,7 @@ const Navbar = props => {
             Stack
           </LinkItem>
           <LinkItem
-            _target="_blank"
+            target="_blank"
             rel="noopener"
             href="https://github.com/malcak/homepage"
             path={path}
