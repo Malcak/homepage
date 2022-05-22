@@ -31,7 +31,9 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
         quality={64}
       />
       <LinkOverlay href={href} target="_blank">
-        <Text mt={2} fontSize={20} fontWeight="bold">{title}</Text>
+        <Text mt={2} fontSize={20} fontWeight="bold">
+          {title}
+        </Text>
       </LinkOverlay>
       <Text fontSize={14}>{children}</Text>
     </LinkBox>
@@ -46,7 +48,7 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => (
     bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.50')}
     _hover={{ boxShadow: 'outline' }}
   >
-    <NextLink href={`/works/${id}`}>
+    <NextLink href={`/works/${id}`} scroll={false}>
       <LinkBox p={3} cursor="pointer">
         <Image
           src={thumbnail}

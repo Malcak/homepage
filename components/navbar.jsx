@@ -26,7 +26,7 @@ const LinkItem = ({ href, path, _target, children, ...props }) => {
   const bgColor = useColorModeValue('#b16286', '#8ec07c')
 
   return (
-    <NextLink href={href} passHref>
+    <NextLink href={href} passHref scroll={false}>
       <Link
         p={2}
         bg={active ? bgColor : undefined}
