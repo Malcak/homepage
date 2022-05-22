@@ -120,7 +120,7 @@ const ModelBanner = () => {
   useEffect(() => {
     window.addEventListener('resize', handleWindowResize, false)
     return () => {
-      window.addEventListener('resize', handleWindowResize, false)
+      window.removeEventListener('resize', handleWindowResize, false)
     }
   }, [renderer, handleWindowResize])
 
