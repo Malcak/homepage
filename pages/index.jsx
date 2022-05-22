@@ -7,6 +7,7 @@ import {
   Button,
   Container,
   Heading,
+  IconButton,
   Link,
   List,
   ListItem,
@@ -73,8 +74,8 @@ const Page = () => {
               borderColor="whiteAlpha.800"
               borderWidth={2}
               borderStyle="solid"
-              width="100px"
-              height="100px"
+              width="24"
+              height="24"
               display="inline-block"
               borderRadius="full"
               overflow="hidden"
@@ -83,8 +84,8 @@ const Page = () => {
                 src="/images/profile_photo.webp"
                 alt="Profile image"
                 borderRadius="full"
-                width="100%"
-                height="100%"
+                width="256"
+                height="256"
               />
             </Box>
           </Box>
@@ -198,13 +199,13 @@ const Page = () => {
                   Malcakx@gmail.com
                 </Button>
               </Link>
-              <Button
+              <IconButton
+                aria-label="copy email"
                 variant="ghost"
                 colorScheme={useColorModeValue('gruvAqua', 'gruvPurple')}
                 onClick={onCopy}
-              >
-                {hasCopied ? <IoCheckmark /> : <IoClipboard />}
-              </Button>
+                icon={hasCopied ? <IoCheckmark /> : <IoClipboard />}
+              />
             </ListItem>
 
             <ListItem>
