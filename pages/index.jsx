@@ -15,7 +15,6 @@ import {
   useColorModeValue,
   chakra
 } from '@chakra-ui/react'
-import { ChevronRightIcon } from '@chakra-ui/icons'
 import {
   IoLogoGithub,
   IoLogoTwitter,
@@ -29,6 +28,7 @@ import {
 import Layout from '../components/layouts/article'
 import Paragraph from '../components/paragraph'
 import Section from '../components/section'
+import LinkButton from '../components/link-button'
 import { BioSection, BioYear } from '../components/bio'
 
 const ProfileImage = chakra(Image, {
@@ -103,14 +103,14 @@ const Page = () => {
             with NodeJS.
           </Paragraph>
           <Box align="center" my={4}>
-            <NextLink href="/works" passHref scroll={false}>
-              <Button
-                rightIcon={<ChevronRightIcon />}
-                colorScheme={useColorModeValue('gruvPurple', 'gruvAqua')}
-              >
-                My Portfolio
-              </Button>
-            </NextLink>
+            <LinkButton
+              href="/works"
+              passHref
+              scroll={false}
+              colorScheme={useColorModeValue('gruvPurple', 'gruvAqua')}
+            >
+              My Portfolio
+            </LinkButton>
           </Box>
         </Section>
         <Section delay={0.2}>
@@ -169,14 +169,14 @@ const Page = () => {
             , video games and music.
           </Paragraph>
           <Box align="center" my={4}>
-            <NextLink href="/stack" passHref scroll={false}>
-              <Button
-                rightIcon={<ChevronRightIcon />}
-                colorScheme={useColorModeValue('gruvPurple', 'gruvAqua')}
-              >
-                My Stack
-              </Button>
-            </NextLink>
+            <LinkButton
+              href="/stack"
+              passHref
+              scroll={false}
+              colorScheme={useColorModeValue('gruvPurple', 'gruvAqua')}
+            >
+              My Stack
+            </LinkButton>
           </Box>
         </Section>
 
