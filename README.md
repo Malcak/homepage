@@ -1,6 +1,6 @@
 # Malcak's Homepage
 
-[Live on Vercel](https://www.malcak.works/).
+[Live on Vercel](https://www.malcak.me/).
 
 ## Stack
 
