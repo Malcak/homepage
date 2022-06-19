@@ -38,7 +38,7 @@ To build:
 ```bash
 npm run build
 # or
-yarn run build
+yarn build
 ```
 
 After creating the build you can start the server:
