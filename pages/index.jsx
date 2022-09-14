@@ -51,7 +51,7 @@ const Page = () => {
           mb={6}
         >
           <AlertIcon />
-          Hello, I&apos;m a software engineer based in &#x1F1E8; and open to work!
+          Hello, I&apos;m a software engineer based in &#x1F1E8-1F1F4; and open to work!
         </Alert>
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
