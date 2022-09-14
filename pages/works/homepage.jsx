@@ -42,15 +42,15 @@ const Work = () => {
 
         <WorkImage
           src="/images/works/homepage_home.webp"
-          alt="calendar app image"
+          alt="malcak homepage"
         />
         <WorkImage
           src="/images/works/homepage_works.webp"
-          alt="calendar app image"
+          alt="malcak homepage works page"
         />
         <WorkImage
           src="/images/works/homepage_stack.webp"
-          alt="calendar app image"
+          alt="malcak homepage stack page"
         />
       </Container>
     </Layout>

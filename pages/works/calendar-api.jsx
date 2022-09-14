@@ -43,11 +43,11 @@ const Work = () => {
 
         <WorkImage
           src="/images/works/calendar_app_home.webp"
-          alt="calendar app image"
+          alt="calendar app image home page"
         />
         <WorkImage
           src="/images/works/calendar_app_event.webp"
-          alt="calendar app image"
+          alt="calendar app image creating a event"
         />
       </Container>
     </Layout>

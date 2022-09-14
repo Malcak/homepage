@@ -22,11 +22,11 @@ const Work = () => {
 
         <WorkImage
           src="/images/works/model_banner_front.webp"
-          alt="calendar app image"
+          alt="malcak homepage voxel model front view"
         />
         <WorkImage
           src="/images/works/model_banner_iso.webp"
-          alt="calendar app image"
+          alt="malcak homepage voxel model isometric view"
         />
       </Container>
     </Layout>

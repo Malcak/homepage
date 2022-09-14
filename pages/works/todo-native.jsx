@@ -44,19 +44,19 @@ const Work = () => {
         <SimpleGrid columns={2} gap={2}>
           <WorkImage
             src="/images/works/todo-native-main.webp"
-            alt="calendar app image"
+            alt="todo native app main view"
           />
           <WorkImage
             src="/images/works/todo-native-sidebar.webp"
-            alt="calendar app image"
+            alt="todo native app sidebar view"
           />
           <WorkImage
             src="/images/works/todo-native-about.webp"
-            alt="calendar app image"
+            alt="todo native app about view"
           />
           <WorkImage
             src="/images/works/todo-native-dark.webp"
-            alt="calendar app image"
+            alt="todo native app dark mode"
           />
         </SimpleGrid>
       </Container>
