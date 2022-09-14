@@ -17,7 +17,6 @@ import {
 } from '@chakra-ui/react'
 import {
   IoLogoGithub,
-  IoLogoTwitter,
   IoLogoSteam,
   IoLogoLinkedin,
   IoMail,
@@ -52,16 +51,15 @@ const Page = () => {
           mb={6}
         >
           <AlertIcon />
-          Hello, I&apos;m a full-stack developer based in Colombia!
+          Hello, I&apos;m a software engineer based in 🇨🇴 and open to work!
         </Alert>
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
-              Malcak
+              Manuel Castaño
             </Heading>
             <p>
-              Full-stack and game developer (not completely but I&apos;m working
-              on it)
+              Software Engineer (learning to be Site Reliability Engineer)
             </p>
           </Box>
           <Box
@@ -96,11 +94,7 @@ const Page = () => {
             Work
           </Heading>
           <Paragraph>
-            Hello, I&apos;m <strong>Manuel Alejandro Castaño Jaramillo</strong>,
-            I&apos;m a computer engineering student from Colombia, enthusiastic
-            about web development and video games, in constant learning and
-            growing. I&apos;m currently working at C&T as a backend developer
-            with NodeJS.
+          Software engineer with half a year of experience, enthusiastic in devops, site reliability engineering and web development. Constantly learning. Have developed server-side applications and set up small continuous integration environments, as well as participated in deploying applications to production. Currently learning to become a Site Reliability Engineer.
           </Paragraph>
           <Box align="center" my={4}>
             <LinkButton
@@ -149,7 +143,7 @@ const Page = () => {
           </BioSection>
           <BioSection>
             <BioYear>2022</BioYear>
-            Works as a backend developer with NodeJS (and sometimes a bit of
+            He worked as a backend developer with NodeJS (and sometimes a bit of
             python).
           </BioSection>
         </Section>
@@ -158,7 +152,14 @@ const Page = () => {
             I ♥
           </Heading>
           <Paragraph>
-            Programming, machine learning, learning new technologies,{' '}
+            <Link
+              href='https://github.com/malcak'
+              rel="noopener"
+              target="_blank"
+            >
+              Programming
+            </Link>
+            , devops, learning new technologies,{' '}
             <Link
               href="https://github.com/Malcak/dotfiles"
               rel="noopener"
@@ -166,7 +167,14 @@ const Page = () => {
             >
               configuring my work environment
             </Link>
-            , video games and music.
+            , music and{' '}
+            <Link
+              href='https://steamcommunity.com/profiles/76561198356341320/'
+              rel='noopener'
+              target='_blank'
+            >
+              video games
+            </Link>.
           </Paragraph>
           <Box align="center" my={4}>
             <LinkButton
@@ -236,22 +244,6 @@ const Page = () => {
                   leftIcon={<IoLogoGithub />}
                 >
                   @Malcak
-                </Button>
-              </Link>
-            </ListItem>
-
-            <ListItem>
-              <Link
-                href="https://twitter.com/malcakk"
-                rel="noopener"
-                target="_blank"
-              >
-                <Button
-                  variant="ghost"
-                  colorScheme={useColorModeValue('gruvAqua', 'gruvPurple')}
-                  leftIcon={<IoLogoTwitter />}
-                >
-                  @Malcakk
                 </Button>
               </Link>
             </ListItem>
